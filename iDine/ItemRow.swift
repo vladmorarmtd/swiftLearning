@@ -12,8 +12,6 @@ struct ItemRow: View {
     
     let colors: [String: Color] = ["D": .purple, "G": .black, "N": .red, "S": .blue, "V": .green]
      
-    
-    
     var body: some View {
         HStack {
             Image(item.thumbnailImage)
@@ -33,7 +31,6 @@ struct ItemRow: View {
                     .font(.caption)
                     .fontWeight(.black)
                     .padding(5)
-                
                     .background(colors[restriction, default: .black])
                     .clipShape(Circle())
                     .foregroundColor(.white)

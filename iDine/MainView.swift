@@ -18,6 +18,10 @@ struct MainView: View {
                 .tabItem {
                     Label("Order", systemImage: "square.and.pencil")
                 }
+            ItemRow(item: MenuItem.example)
+                .tabItem {
+                    Label("Order Clone", systemImage: "square.and.arrow.up")
+                }
         }
     }
 }

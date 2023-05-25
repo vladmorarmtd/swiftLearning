@@ -40,7 +40,17 @@ struct CheckoutView: View {
                 
                 if addLoyaltyDetails {
                     TextField("Enter your iDine ID", text: $loyaltyNumber)
+                } else {
+                    Text("Fuck this shit 🥸")
                 }
+                
+                switch paymentType {
+                case "Cash":
+                    Text("This is 💄")
+                default:
+                    Text("This is 👄")
+                }
+
             }
             
             Section("Add a tip?") {
@@ -49,7 +59,7 @@ struct CheckoutView: View {
                         Text("\($0)%")
                     }
                 }
-                .pickerStyle(.segmented)
+                .pickerStyle(.inline)
             }
             
             Section ("Total: \(totalPrice)") {
